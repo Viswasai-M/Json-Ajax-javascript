@@ -1,21 +1,19 @@
 $(document).ready(function(){
 $('#btn').click (function(){
    var reqData=$('#movieProd').val()+$('#txtId').val();
-    var result=$('#results');
+    var result=$('#results'+reqData);
     $.ajax({
     url:"https://api.themoviedb.org/3/movie/66?api_key=8ecef8931aa10a61ac7c888d41905273",
         method: 'GET',
-        data:{id:66},
+        //data:{id:66},
 
         dataType: 'jsonp',
         success: function(data){
-          var id= 66;
-            result.html('name: '+data.production_companies[0].name+'<br>'+ 'id'+ data.production_companies[0].id);
-            for( var i=0;i<=id;i++){
+        //  var id= 66;
+        result.html('name: '+data.production_companies[0].name+'<br>'+ 'id'+ data.production_companies[0].id);
 
-              id++;
-              console.log(id);
-            }
+
+
         }
     })
 });

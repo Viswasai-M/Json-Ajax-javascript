@@ -4,7 +4,7 @@
     <title> WebPage for movies</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!---<script src ="./script.js"></script>-->
+
     <script type= "text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src = "./script.js"></script>
@@ -13,6 +13,16 @@
 </head>
 
 <body>
+  <h3>Using JavaScript with Jquery and Ajax</h3>
+  <!--navigation links -->
+  <nav>
+      <ul>
+          <li><a href="#">More Movies</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign Up</a></li>
+      </ul>
+  </nav>
+
 <table>
     <tr>
         <td>movieProd</td>
@@ -23,24 +33,12 @@
         <td><input type="text" id="txtId"></td>
     </tr>
 
-    </table>
+</table>
     <!-- the header -->
     <header>
-        <h3>Using JavaScrpt with Jquery and Ajax</h3>
+
         <button id="btn">Fetch movie information</button>
-        <!-- logo -->
-
-
-        <!--navigation links -->
-        <nav>
-            <ul>
-                <li><a href="#">More Movies</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-
-        <div id="results">Results</div>
+          <div id="results">Results</div>
 
     </header>
 
